@@ -84,7 +84,6 @@ window.addEventListener('DOMContentLoaded', () => {
     };
 
     const userAction = (tile, index) => {
-        console.log(index);
         if (isValidAction(tile) && isGameActive) {
             tile.innerText = currentPlayer;
             tile.classList.add(`player${currentPlayer}`);
@@ -117,7 +116,6 @@ window.addEventListener('DOMContentLoaded', () => {
             userAction(tiles[index], index);
         });
     }
-    console.log(tiles[0]);
 
     resetButton.addEventListener('click', resetBoard);
 });
